@@ -1,0 +1,20 @@
+ALGORITHM Caracters
+VAR
+chaine:str
+numword,numvowels,length:ENTIER
+BEGIN
+numword=1
+numvowels=0
+length=0
+READ(chaine)
+FOR i FROM 0 TO chaine.length-1 STEP 1  DO
+IF (chaine[i]==("a" AU "o" Au "i" Au "e" )) THEN
+numvowels=numvowels+1
+END_IF
+IF (chaine[i] == ' ') THEN
+numword=numword+1
+END_IF
+length=length+1
+END_FOR
+write(numword,numvowels,length)
+END
